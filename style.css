@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    margin: .5rem;
+    font-size: 3em;
+    justify-content: center;
+    border: 5px dotted black;
+    text-align: center;
+}
+
+div#party-list-container {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.party {
+    /* add padding and margin to cards */
+
+    /* add flex or grid to cards */
+    width: 30%;
+    margin: .5em;
+    padding: 1.5em;
+
+    border: .2em solid;
+    border-radius: 25px;
+
+    box-shadow: .6em .6em .6em -.6em rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.party:nth-child(even) {
+    transform: rotate(1deg);
+
+}
+
+div.party:nth-child(odd) {
+    transform: rotate(-1deg);
+
+}
+#new-party-form{
+    padding: 1.5em; 
+    margin: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.delete-button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: transparent;
+}
+div.party>h2 {
+    border: .05em solid black;
+    color: white;
+    /* font-size: 3em; */
+}
+
+/* round the corners */
+
+
+/* prettify buttons */
+button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: .5em;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.476));
+}
+
+button:hover {
+    transform: scale(1.2);
+    background-color: #45a049;
+    transform: translateY(-5px);
+}
